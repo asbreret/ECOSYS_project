@@ -1,3 +1,5 @@
+*.txt
+*.nc
 Model_Outputs/US-Dmg/0_dc.nc
 Model_Outputs/US-Dmg/0_dh.nc
 Model_Outputs/US-Dmg/0_dn.nc
