@@ -80,8 +80,6 @@ SW_IN = Atmos_var.SW_IN;
 
 
 
-
-
 TA = gapFill(TA, time);
 VPD = gapFill(VPD, time);
 WS = gapFill(WS, time);
@@ -89,7 +87,7 @@ P = gapFill(P, time);
 SW_IN = gapFill(SW_IN, time);
 
 
-
+SW_IN(SW_IN<0) = 0;
 
 
 subplot(5,1,1)
@@ -129,6 +127,17 @@ for i = 1:length(uniqueYears)
     Matrix = [yr(ind), dy(ind), hr(ind), Temp_kelvin(ind), RH_estimate(ind), ...
         WS(ind), P(ind), SW_IN(ind)];
     Matrix = round(Matrix, 2);
+
+    % Check the day number in the last row
+    lastDay = Matrix(end, 2);
+
+    % If the last day is 365, duplicate the rows with day 365 and append
+    if lastDay == 365
+        rowsToCopy = Matrix(Matrix(:, 2) == 365, :);   % Extract rows with day 365
+        rowsToCopy(:, 2) = 366;                        % Change the day number to 366
+        Matrix = [Matrix; rowsToCopy];                 % Append to the main matrix
+    end
+
     writematrix(Matrix, [inputdir,filename], 'WriteMode', 'append');
 end
 

@@ -19,4 +19,4 @@ fname = [basedir,'AMF_US-EDN_FLUXNET_FULLSET_HH_2018-2019_3-5.csv'];
 nc_fname = netcdf_convert(fname);
 
 % Genereate weather files
-Weather_file_gen(nc_fname,inputdir)
+Weather_file_gen1(nc_fname,inputdir)

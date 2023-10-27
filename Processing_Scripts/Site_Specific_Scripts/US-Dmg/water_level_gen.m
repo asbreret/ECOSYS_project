@@ -42,8 +42,14 @@ time_in_days = datenum(time);
 
 % Loop through the years 1900-2020
 for yr = 1900:2020
-    % Generate half-hourly time series for the current year
-    full_year_time = datetime(yr,1,1):minutes(30):datetime(yr,12,31,23,30,0);
+
+    if mod(yr, 4) == 0  % If year is divisible by 4
+        full_year_time = datetime(yr,1,1):minutes(30):datetime(yr,12,31,23,30,0);
+    else
+        % Generate the time series excluding February 29
+        full_year_time = [datetime(yr,1,1):minutes(30):datetime(yr,2,28,23,30,0), datetime(yr,3,1):minutes(30):datetime(yr,12,31,23,30,0)];
+    end
+
     full_year_time_in_days = datenum(full_year_time);
 
     % Predict tides for the entire year
@@ -66,6 +72,12 @@ for yr = 1900:2020
     fileID = fopen(fullpath, 'w');
     for j = 1:length(unique_days)
         fprintf(fileID, '%02d%02d%d 23 %.2f\n', day(unique_days(j)), month(unique_days(j)), year(unique_days(j)), daily_avg_values(j));
+
+        % If the year is 1900 and the current day is February 28, add an entry for February 29
+        if yr == 1900 && day(unique_days(j)) == 28 && month(unique_days(j)) == 2
+            fprintf(fileID, '29021900 23 %.2f\n', daily_avg_values(j));  % Using the value from February 28 for simplicity
+        end
+
     end
     fclose(fileID);
 

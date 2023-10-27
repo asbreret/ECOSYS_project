@@ -22,7 +22,7 @@ variable_names = variable_names(~strcmp(variable_names, 'time'));
 
 % Determine the number of variables and the number of plots
 num_variables = length(variable_names);
-num_rows = 4;
+num_rows = 5;
 num_cols = 2;
 
 % Create a new figure to plot all variables against time

@@ -15,7 +15,7 @@ for j = 1:length(code_list)
 
     code = code_list{j};
 
-    parfor i = all_years
+    for i = all_years
 
         t = datetime(   i,01,01,'Format','ddMMyyyy'); start_date = char(t); % Start Date
         t = datetime(   i,12,31,'Format','ddMMyyyy'); end_date = char(t); % End Date
@@ -46,8 +46,8 @@ for j = 1:length(code_list)
             1, 0.00, 0.00, 1, 1.00, 1, 1, 1, 1, 1
             ];
 
-        time_step = 15;
-        gas_exchange_step = 20;
+        time_step = 15; %15
+        gas_exchange_step = 3;
         hourly_output_freq = 12;
         daily_output_freq = 1;
         restart_file_freq = -1;

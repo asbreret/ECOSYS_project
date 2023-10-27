@@ -2,15 +2,15 @@
 #SBATCH --partition=lr3
 #SBATCH --ntasks=1
 #SBATCH --mem=512mb
-#SBATCH --time=8:30:00
+#SBATCH --time=0:10:00
 #SBATCH --qos=lr_normal
-/global/home/users/ashbre/ecosys_new/ecosys.x << eor > logdl
+/global/home/users/ashbre/ecosys13022023/ecosys.x << eor > logdl
 1 1 1 1
 site_US-Dmg.txt
 topo_US-Dmg.txt
 120 1
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1900.txt
 soil_manage_1900
 pft_plant
@@ -25,7 +25,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1901.txt
 soil_manage_1901
 pft_grow
@@ -40,7 +40,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1902.txt
 soil_manage_1902
 pft_grow
@@ -55,7 +55,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1903.txt
 soil_manage_1903
 pft_grow
@@ -70,7 +70,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1904.txt
 soil_manage_1904
 pft_grow
@@ -85,7 +85,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1905.txt
 soil_manage_1905
 pft_grow
@@ -100,7 +100,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1906.txt
 soil_manage_1906
 pft_grow
@@ -115,7 +115,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1907.txt
 soil_manage_1907
 pft_grow
@@ -130,7 +130,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1908.txt
 soil_manage_1908
 pft_grow
@@ -145,7 +145,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1909.txt
 soil_manage_1909
 pft_grow
@@ -160,7 +160,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1910.txt
 soil_manage_1910
 pft_grow
@@ -175,7 +175,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1911.txt
 soil_manage_1911
 pft_grow
@@ -190,7 +190,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1912.txt
 soil_manage_1912
 pft_grow
@@ -205,7 +205,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1913.txt
 soil_manage_1913
 pft_grow
@@ -220,7 +220,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1914.txt
 soil_manage_1914
 pft_grow
@@ -235,7 +235,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1915.txt
 soil_manage_1915
 pft_grow
@@ -250,7 +250,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1916.txt
 soil_manage_1916
 pft_grow
@@ -265,7 +265,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1917.txt
 soil_manage_1917
 pft_grow
@@ -280,7 +280,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1918.txt
 soil_manage_1918
 pft_grow
@@ -295,7 +295,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1919.txt
 soil_manage_1919
 pft_grow
@@ -310,7 +310,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1920.txt
 soil_manage_1920
 pft_grow
@@ -325,7 +325,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1921.txt
 soil_manage_1921
 pft_grow
@@ -340,7 +340,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1922.txt
 soil_manage_1922
 pft_grow
@@ -355,7 +355,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1923.txt
 soil_manage_1923
 pft_grow
@@ -370,7 +370,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1924.txt
 soil_manage_1924
 pft_grow
@@ -385,7 +385,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1925.txt
 soil_manage_1925
 pft_grow
@@ -400,7 +400,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1926.txt
 soil_manage_1926
 pft_grow
@@ -415,7 +415,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1927.txt
 soil_manage_1927
 pft_grow
@@ -430,7 +430,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1928.txt
 soil_manage_1928
 pft_grow
@@ -445,7 +445,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1929.txt
 soil_manage_1929
 pft_grow
@@ -460,7 +460,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1930.txt
 soil_manage_1930
 pft_grow
@@ -475,7 +475,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1931.txt
 soil_manage_1931
 pft_grow
@@ -490,7 +490,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1932.txt
 soil_manage_1932
 pft_grow
@@ -505,7 +505,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1933.txt
 soil_manage_1933
 pft_grow
@@ -520,7 +520,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1934.txt
 soil_manage_1934
 pft_grow
@@ -535,7 +535,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1935.txt
 soil_manage_1935
 pft_grow
@@ -550,7 +550,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1936.txt
 soil_manage_1936
 pft_grow
@@ -565,7 +565,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1937.txt
 soil_manage_1937
 pft_grow
@@ -580,7 +580,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1938.txt
 soil_manage_1938
 pft_grow
@@ -595,7 +595,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1939.txt
 soil_manage_1939
 pft_grow
@@ -610,7 +610,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1940.txt
 soil_manage_1940
 pft_grow
@@ -625,7 +625,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1941.txt
 soil_manage_1941
 pft_grow
@@ -640,7 +640,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1942.txt
 soil_manage_1942
 pft_grow
@@ -655,7 +655,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1943.txt
 soil_manage_1943
 pft_grow
@@ -670,7 +670,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1944.txt
 soil_manage_1944
 pft_grow
@@ -685,7 +685,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1945.txt
 soil_manage_1945
 pft_grow
@@ -700,7 +700,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1946.txt
 soil_manage_1946
 pft_grow
@@ -715,7 +715,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1947.txt
 soil_manage_1947
 pft_grow
@@ -730,7 +730,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1948.txt
 soil_manage_1948
 pft_grow
@@ -745,7 +745,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1949.txt
 soil_manage_1949
 pft_grow
@@ -760,7 +760,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1950.txt
 soil_manage_1950
 pft_grow
@@ -775,7 +775,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1951.txt
 soil_manage_1951
 pft_grow
@@ -790,7 +790,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1952.txt
 soil_manage_1952
 pft_grow
@@ -805,7 +805,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1953.txt
 soil_manage_1953
 pft_grow
@@ -820,7 +820,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1954.txt
 soil_manage_1954
 pft_grow
@@ -835,7 +835,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1955.txt
 soil_manage_1955
 pft_grow
@@ -850,7 +850,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1956.txt
 soil_manage_1956
 pft_grow
@@ -865,7 +865,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1957.txt
 soil_manage_1957
 pft_grow
@@ -880,7 +880,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1958.txt
 soil_manage_1958
 pft_grow
@@ -895,7 +895,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1959.txt
 soil_manage_1959
 pft_grow
@@ -910,7 +910,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1960.txt
 soil_manage_1960
 pft_grow
@@ -925,7 +925,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1961.txt
 soil_manage_1961
 pft_grow
@@ -940,7 +940,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1962.txt
 soil_manage_1962
 pft_grow
@@ -955,7 +955,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1963.txt
 soil_manage_1963
 pft_grow
@@ -970,7 +970,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1964.txt
 soil_manage_1964
 pft_grow
@@ -985,7 +985,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1965.txt
 soil_manage_1965
 pft_grow
@@ -1000,7 +1000,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1966.txt
 soil_manage_1966
 pft_grow
@@ -1015,7 +1015,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1967.txt
 soil_manage_1967
 pft_grow
@@ -1030,7 +1030,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1968.txt
 soil_manage_1968
 pft_grow
@@ -1045,7 +1045,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1969.txt
 soil_manage_1969
 pft_grow
@@ -1060,7 +1060,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1970.txt
 soil_manage_1970
 pft_grow
@@ -1075,7 +1075,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1971.txt
 soil_manage_1971
 pft_grow
@@ -1090,7 +1090,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1972.txt
 soil_manage_1972
 pft_grow
@@ -1105,7 +1105,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1973.txt
 soil_manage_1973
 pft_grow
@@ -1120,7 +1120,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1974.txt
 soil_manage_1974
 pft_grow
@@ -1135,7 +1135,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1975.txt
 soil_manage_1975
 pft_grow
@@ -1150,7 +1150,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1976.txt
 soil_manage_1976
 pft_grow
@@ -1165,7 +1165,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1977.txt
 soil_manage_1977
 pft_grow
@@ -1180,7 +1180,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1978.txt
 soil_manage_1978
 pft_grow
@@ -1195,7 +1195,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1979.txt
 soil_manage_1979
 pft_grow
@@ -1210,7 +1210,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1980.txt
 soil_manage_1980
 pft_grow
@@ -1225,7 +1225,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1981.txt
 soil_manage_1981
 pft_grow
@@ -1240,7 +1240,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1982.txt
 soil_manage_1982
 pft_grow
@@ -1255,7 +1255,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1983.txt
 soil_manage_1983
 pft_grow
@@ -1270,7 +1270,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1984.txt
 soil_manage_1984
 pft_grow
@@ -1285,7 +1285,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1985.txt
 soil_manage_1985
 pft_grow
@@ -1300,7 +1300,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1986.txt
 soil_manage_1986
 pft_grow
@@ -1315,7 +1315,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1987.txt
 soil_manage_1987
 pft_grow
@@ -1330,7 +1330,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1988.txt
 soil_manage_1988
 pft_grow
@@ -1345,7 +1345,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1989.txt
 soil_manage_1989
 pft_grow
@@ -1360,7 +1360,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1990.txt
 soil_manage_1990
 pft_grow
@@ -1375,7 +1375,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1991.txt
 soil_manage_1991
 pft_grow
@@ -1390,7 +1390,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1992.txt
 soil_manage_1992
 pft_grow
@@ -1405,7 +1405,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1993.txt
 soil_manage_1993
 pft_grow
@@ -1420,7 +1420,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1994.txt
 soil_manage_1994
 pft_grow
@@ -1435,7 +1435,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1995.txt
 soil_manage_1995
 pft_grow
@@ -1450,7 +1450,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1996.txt
 soil_manage_1996
 pft_grow
@@ -1465,7 +1465,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1997.txt
 soil_manage_1997
 pft_grow
@@ -1480,7 +1480,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_1998.txt
 soil_manage_1998
 pft_grow
@@ -1495,7 +1495,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_1999.txt
 soil_manage_1999
 pft_grow
@@ -1510,7 +1510,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2000.txt
 soil_manage_2000
 pft_grow
@@ -1525,7 +1525,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2001.txt
 soil_manage_2001
 pft_grow
@@ -1540,7 +1540,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2002.txt
 soil_manage_2002
 pft_grow
@@ -1555,7 +1555,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2003.txt
 soil_manage_2003
 pft_grow
@@ -1570,7 +1570,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2004.txt
 soil_manage_2004
 pft_grow
@@ -1585,7 +1585,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2005.txt
 soil_manage_2005
 pft_grow
@@ -1600,7 +1600,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2006.txt
 soil_manage_2006
 pft_grow
@@ -1615,7 +1615,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2007.txt
 soil_manage_2007
 pft_grow
@@ -1630,7 +1630,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2008.txt
 soil_manage_2008
 pft_grow
@@ -1645,7 +1645,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2009.txt
 soil_manage_2009
 pft_grow
@@ -1660,7 +1660,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2010.txt
 soil_manage_2010
 pft_grow
@@ -1675,7 +1675,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2011.txt
 soil_manage_2011
 pft_grow
@@ -1690,7 +1690,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2012.txt
 soil_manage_2012
 pft_grow
@@ -1705,7 +1705,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2013.txt
 soil_manage_2013
 pft_grow
@@ -1720,7 +1720,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2014.txt
 soil_manage_2014
 pft_grow
@@ -1735,7 +1735,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2015.txt
 soil_manage_2015
 pft_grow
@@ -1750,7 +1750,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2016.txt
 soil_manage_2016
 pft_grow
@@ -1765,7 +1765,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2017.txt
 soil_manage_2017
 pft_grow
@@ -1780,7 +1780,7 @@ dn
 dp
 dh
 1 1
-weather_2021.txt
+weather_2022.txt
 Options_2018.txt
 soil_manage_2018
 pft_grow
@@ -1795,7 +1795,7 @@ dn
 dp
 dh
 1 1
-weather_2022.txt
+weather_2021.txt
 Options_2019.txt
 soil_manage_2019
 pft_grow

@@ -75,6 +75,17 @@ for i = 1:length(uniqueYears)
     Matrix = [yr(ind), dy(ind), hr(ind), Temp_kelvin(ind), RH(ind), ...
         WS(ind), P(ind), SW_IN(ind)];
     Matrix = round(Matrix, 2);
+
+    % Check the day number in the last row
+    lastDay = Matrix(end, 2);
+
+    % If the last day is 365, duplicate the rows with day 365 and append
+    if lastDay == 365
+        rowsToCopy = Matrix(Matrix(:, 2) == 365, :);   % Extract rows with day 365
+        rowsToCopy(:, 2) = 366;                        % Change the day number to 366
+        Matrix = [Matrix; rowsToCopy];                 % Append to the main matrix
+    end
+
     writematrix(Matrix, [inputdir,filename], 'WriteMode', 'append');
 end
 

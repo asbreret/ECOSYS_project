@@ -92,16 +92,7 @@ SW_IN = gapFill(SW_IN, time);
 
 
 
-subplot(5,1,1)
-plot(time,TA)
-subplot(5,1,2)
-plot(time,VPD)
-subplot(5,1,3)
-plot(time,WS)
-subplot(5,1,4)
-plot(time,P)
-subplot(5,1,5)
-plot(time,SW_IN)
+
 
 
 
@@ -112,6 +103,38 @@ VPS = 0.61 .* exp(5360.0 .* (3.661E-03 - 1.0 ./ Temp_kelvin)); % saturated vapor
 P_ambient = VPS - (VPD / 10); % convert VPD from hPa to kPa
 RH_estimate = (P_ambient ./ VPS) * 100;
 RH_estimate = max(2, min(98, RH_estimate)); % Clip RH values between 2 and 98
+
+
+figure;
+
+subplot(5,1,1)
+plot(time,TA)
+ylabel('Temp (°C)') % assuming Celsius; adjust if necessary
+set(gca,'FontSize',14)
+
+subplot(5,1,2)
+plot(time,RH_estimate)
+ylabel('RH (%)')
+set(gca,'FontSize',14)
+
+subplot(5,1,3)
+plot(time,WS)
+ylabel('Wind (m/s)') % assuming meters per second; adjust if necessary
+set(gca,'FontSize',14)
+
+subplot(5,1,4)
+plot(time,P)
+ylabel('Rain (mm)') % assuming millimeters; adjust if necessary
+set(gca,'FontSize',14)
+
+subplot(5,1,5)
+plot(time,SW_IN)
+ylabel('Solar (W/m^2)') % assuming Watts per square meter; adjust if necessary
+set(gca,'FontSize',14)
+
+sgtitle('Weather for US-Tw1') % Overall title for the subplots
+
+
 
 
 
@@ -129,6 +152,17 @@ for i = 1:length(uniqueYears)
     Matrix = [yr(ind), dy(ind), hr(ind), Temp_kelvin(ind), RH_estimate(ind), ...
         WS(ind), P(ind), SW_IN(ind)];
     Matrix = round(Matrix, 2);
+    
+    % Check the day number in the last row
+    lastDay = Matrix(end, 2);
+
+    % If the last day is 365, duplicate the rows with day 365 and append
+    if lastDay == 365
+        rowsToCopy = Matrix(Matrix(:, 2) == 365, :);   % Extract rows with day 365
+        rowsToCopy(:, 2) = 366;                        % Change the day number to 366
+        Matrix = [Matrix; rowsToCopy];                 % Append to the main matrix
+    end
+
     writematrix(Matrix, [inputdir,filename], 'WriteMode', 'append');
 end
 

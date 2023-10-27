@@ -30,7 +30,7 @@ N = size(NH4_depth,2); % amount of depth layers
 fac = 2/3;
 z(1:N) = 0.01*exp((1:N)*fac) / exp(fac);
 
-ind = logical(std(NO3_depth));
+ind = logical(nanstd(NO3_depth));
 
 NH4_depth = NH4_depth(:,ind);
 NO3_depth = NO3_depth(:,ind);
@@ -53,18 +53,34 @@ for i = 1:num_variables
     % Read the data for the current variable
     var_data = ncread(fname, variable_names{i});
     
+    % Get the long_name attribute for the current variable
+    % If the attribute does not exist, use the variable name as a fallback
+    try
+        var_title = ncreadatt(fname, variable_names{i}, 'long_name');
+    catch
+        var_title = variable_names{i};
+    end
+    
+    % Get the units attribute for the current variable
+    % If the attribute does not exist, use an empty string as a fallback
+    try
+        var_units = ncreadatt(fname, variable_names{i}, 'units');
+    catch
+        var_units = '';
+    end
+    
     % Create a subplot for the current variable
     subplot(num_rows, num_cols, i);
     
     % Plot the variable against time
     plot(time, var_data);
     
-    % Add a title for the subplot with the variable name
-    title(variable_names{i}, 'Interpreter', 'none');
+    % Add a title for the subplot with the long_name attribute
+    title(var_title, 'Interpreter', 'none');
     
-    % Optionally, you can add x and y axis labels here if needed
-    % xlabel('Time');
-    % ylabel('Variable Value');
+    % Add x and y axis labels
+    xlabel('Time');
+    ylabel(var_units); % Here you use the variable units as y-axis label
 end
 
 % Adjust the spacing between subplots for better visualization

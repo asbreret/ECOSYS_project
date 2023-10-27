@@ -2,9 +2,9 @@
 #SBATCH --partition=lr3
 #SBATCH --ntasks=1
 #SBATCH --mem=512mb
-#SBATCH --time=8:30:00
+#SBATCH --time=0:10:00
 #SBATCH --qos=lr_normal
-/global/home/users/ashbre/ecosys_new/ecosys.x << eor > logdl
+/global/home/users/ashbre/ecosys13022023/ecosys.x << eor > logdl
 1 1 1 1
 site_US-EDN.txt
 topo_US-EDN.txt
@@ -12,7 +12,7 @@ topo_US-EDN.txt
 1 1
 weather_2018.txt
 Options_1900.txt
-soil_manage_1900
+Soil_manage.txt
 pft_plant
 NO
 NO
@@ -27,7 +27,7 @@ dh
 1 1
 weather_2019.txt
 Options_1901.txt
-soil_manage_1901
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -42,7 +42,7 @@ dh
 1 1
 weather_2018.txt
 Options_1902.txt
-soil_manage_1902
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -57,7 +57,7 @@ dh
 1 1
 weather_2019.txt
 Options_1903.txt
-soil_manage_1903
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -72,7 +72,7 @@ dh
 1 1
 weather_2018.txt
 Options_1904.txt
-soil_manage_1904
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -87,7 +87,7 @@ dh
 1 1
 weather_2019.txt
 Options_1905.txt
-soil_manage_1905
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -102,7 +102,7 @@ dh
 1 1
 weather_2018.txt
 Options_1906.txt
-soil_manage_1906
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -117,7 +117,7 @@ dh
 1 1
 weather_2019.txt
 Options_1907.txt
-soil_manage_1907
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -132,7 +132,7 @@ dh
 1 1
 weather_2018.txt
 Options_1908.txt
-soil_manage_1908
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -147,7 +147,7 @@ dh
 1 1
 weather_2019.txt
 Options_1909.txt
-soil_manage_1909
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -162,7 +162,7 @@ dh
 1 1
 weather_2018.txt
 Options_1910.txt
-soil_manage_1910
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -177,7 +177,7 @@ dh
 1 1
 weather_2019.txt
 Options_1911.txt
-soil_manage_1911
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -192,7 +192,7 @@ dh
 1 1
 weather_2018.txt
 Options_1912.txt
-soil_manage_1912
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -207,7 +207,7 @@ dh
 1 1
 weather_2019.txt
 Options_1913.txt
-soil_manage_1913
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -222,7 +222,7 @@ dh
 1 1
 weather_2018.txt
 Options_1914.txt
-soil_manage_1914
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -237,7 +237,7 @@ dh
 1 1
 weather_2019.txt
 Options_1915.txt
-soil_manage_1915
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -252,7 +252,7 @@ dh
 1 1
 weather_2018.txt
 Options_1916.txt
-soil_manage_1916
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -267,7 +267,7 @@ dh
 1 1
 weather_2019.txt
 Options_1917.txt
-soil_manage_1917
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -282,7 +282,7 @@ dh
 1 1
 weather_2018.txt
 Options_1918.txt
-soil_manage_1918
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -297,7 +297,7 @@ dh
 1 1
 weather_2019.txt
 Options_1919.txt
-soil_manage_1919
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -312,7 +312,7 @@ dh
 1 1
 weather_2018.txt
 Options_1920.txt
-soil_manage_1920
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -327,7 +327,7 @@ dh
 1 1
 weather_2019.txt
 Options_1921.txt
-soil_manage_1921
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -342,7 +342,7 @@ dh
 1 1
 weather_2018.txt
 Options_1922.txt
-soil_manage_1922
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -357,7 +357,7 @@ dh
 1 1
 weather_2019.txt
 Options_1923.txt
-soil_manage_1923
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -372,7 +372,7 @@ dh
 1 1
 weather_2018.txt
 Options_1924.txt
-soil_manage_1924
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -387,7 +387,7 @@ dh
 1 1
 weather_2019.txt
 Options_1925.txt
-soil_manage_1925
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -402,7 +402,7 @@ dh
 1 1
 weather_2018.txt
 Options_1926.txt
-soil_manage_1926
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -417,7 +417,7 @@ dh
 1 1
 weather_2019.txt
 Options_1927.txt
-soil_manage_1927
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -432,7 +432,7 @@ dh
 1 1
 weather_2018.txt
 Options_1928.txt
-soil_manage_1928
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -447,7 +447,7 @@ dh
 1 1
 weather_2019.txt
 Options_1929.txt
-soil_manage_1929
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -462,7 +462,7 @@ dh
 1 1
 weather_2018.txt
 Options_1930.txt
-soil_manage_1930
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -477,7 +477,7 @@ dh
 1 1
 weather_2019.txt
 Options_1931.txt
-soil_manage_1931
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -492,7 +492,7 @@ dh
 1 1
 weather_2018.txt
 Options_1932.txt
-soil_manage_1932
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -507,7 +507,7 @@ dh
 1 1
 weather_2019.txt
 Options_1933.txt
-soil_manage_1933
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -522,7 +522,7 @@ dh
 1 1
 weather_2018.txt
 Options_1934.txt
-soil_manage_1934
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -537,7 +537,7 @@ dh
 1 1
 weather_2019.txt
 Options_1935.txt
-soil_manage_1935
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -552,7 +552,7 @@ dh
 1 1
 weather_2018.txt
 Options_1936.txt
-soil_manage_1936
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -567,7 +567,7 @@ dh
 1 1
 weather_2019.txt
 Options_1937.txt
-soil_manage_1937
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -582,7 +582,7 @@ dh
 1 1
 weather_2018.txt
 Options_1938.txt
-soil_manage_1938
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -597,7 +597,7 @@ dh
 1 1
 weather_2019.txt
 Options_1939.txt
-soil_manage_1939
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -612,7 +612,7 @@ dh
 1 1
 weather_2018.txt
 Options_1940.txt
-soil_manage_1940
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -627,7 +627,7 @@ dh
 1 1
 weather_2019.txt
 Options_1941.txt
-soil_manage_1941
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -642,7 +642,7 @@ dh
 1 1
 weather_2018.txt
 Options_1942.txt
-soil_manage_1942
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -657,7 +657,7 @@ dh
 1 1
 weather_2019.txt
 Options_1943.txt
-soil_manage_1943
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -672,7 +672,7 @@ dh
 1 1
 weather_2018.txt
 Options_1944.txt
-soil_manage_1944
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -687,7 +687,7 @@ dh
 1 1
 weather_2019.txt
 Options_1945.txt
-soil_manage_1945
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -702,7 +702,7 @@ dh
 1 1
 weather_2018.txt
 Options_1946.txt
-soil_manage_1946
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -717,7 +717,7 @@ dh
 1 1
 weather_2019.txt
 Options_1947.txt
-soil_manage_1947
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -732,7 +732,7 @@ dh
 1 1
 weather_2018.txt
 Options_1948.txt
-soil_manage_1948
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -747,7 +747,7 @@ dh
 1 1
 weather_2019.txt
 Options_1949.txt
-soil_manage_1949
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -762,7 +762,7 @@ dh
 1 1
 weather_2018.txt
 Options_1950.txt
-soil_manage_1950
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -777,7 +777,7 @@ dh
 1 1
 weather_2019.txt
 Options_1951.txt
-soil_manage_1951
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -792,7 +792,7 @@ dh
 1 1
 weather_2018.txt
 Options_1952.txt
-soil_manage_1952
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -807,7 +807,7 @@ dh
 1 1
 weather_2019.txt
 Options_1953.txt
-soil_manage_1953
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -822,7 +822,7 @@ dh
 1 1
 weather_2018.txt
 Options_1954.txt
-soil_manage_1954
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -837,7 +837,7 @@ dh
 1 1
 weather_2019.txt
 Options_1955.txt
-soil_manage_1955
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -852,7 +852,7 @@ dh
 1 1
 weather_2018.txt
 Options_1956.txt
-soil_manage_1956
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -867,7 +867,7 @@ dh
 1 1
 weather_2019.txt
 Options_1957.txt
-soil_manage_1957
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -882,7 +882,7 @@ dh
 1 1
 weather_2018.txt
 Options_1958.txt
-soil_manage_1958
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -897,7 +897,7 @@ dh
 1 1
 weather_2019.txt
 Options_1959.txt
-soil_manage_1959
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -912,7 +912,7 @@ dh
 1 1
 weather_2018.txt
 Options_1960.txt
-soil_manage_1960
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -927,7 +927,7 @@ dh
 1 1
 weather_2019.txt
 Options_1961.txt
-soil_manage_1961
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -942,7 +942,7 @@ dh
 1 1
 weather_2018.txt
 Options_1962.txt
-soil_manage_1962
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -957,7 +957,7 @@ dh
 1 1
 weather_2019.txt
 Options_1963.txt
-soil_manage_1963
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -972,7 +972,7 @@ dh
 1 1
 weather_2018.txt
 Options_1964.txt
-soil_manage_1964
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -987,7 +987,7 @@ dh
 1 1
 weather_2019.txt
 Options_1965.txt
-soil_manage_1965
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1002,7 +1002,7 @@ dh
 1 1
 weather_2018.txt
 Options_1966.txt
-soil_manage_1966
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1017,7 +1017,7 @@ dh
 1 1
 weather_2019.txt
 Options_1967.txt
-soil_manage_1967
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1032,7 +1032,7 @@ dh
 1 1
 weather_2018.txt
 Options_1968.txt
-soil_manage_1968
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1047,7 +1047,7 @@ dh
 1 1
 weather_2019.txt
 Options_1969.txt
-soil_manage_1969
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1062,7 +1062,7 @@ dh
 1 1
 weather_2018.txt
 Options_1970.txt
-soil_manage_1970
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1077,7 +1077,7 @@ dh
 1 1
 weather_2019.txt
 Options_1971.txt
-soil_manage_1971
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1092,7 +1092,7 @@ dh
 1 1
 weather_2018.txt
 Options_1972.txt
-soil_manage_1972
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1107,7 +1107,7 @@ dh
 1 1
 weather_2019.txt
 Options_1973.txt
-soil_manage_1973
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1122,7 +1122,7 @@ dh
 1 1
 weather_2018.txt
 Options_1974.txt
-soil_manage_1974
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1137,7 +1137,7 @@ dh
 1 1
 weather_2019.txt
 Options_1975.txt
-soil_manage_1975
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1152,7 +1152,7 @@ dh
 1 1
 weather_2018.txt
 Options_1976.txt
-soil_manage_1976
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1167,7 +1167,7 @@ dh
 1 1
 weather_2019.txt
 Options_1977.txt
-soil_manage_1977
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1182,7 +1182,7 @@ dh
 1 1
 weather_2018.txt
 Options_1978.txt
-soil_manage_1978
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1197,7 +1197,7 @@ dh
 1 1
 weather_2019.txt
 Options_1979.txt
-soil_manage_1979
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1212,7 +1212,7 @@ dh
 1 1
 weather_2018.txt
 Options_1980.txt
-soil_manage_1980
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1227,7 +1227,7 @@ dh
 1 1
 weather_2019.txt
 Options_1981.txt
-soil_manage_1981
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1242,7 +1242,7 @@ dh
 1 1
 weather_2018.txt
 Options_1982.txt
-soil_manage_1982
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1257,7 +1257,7 @@ dh
 1 1
 weather_2019.txt
 Options_1983.txt
-soil_manage_1983
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1272,7 +1272,7 @@ dh
 1 1
 weather_2018.txt
 Options_1984.txt
-soil_manage_1984
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1287,7 +1287,7 @@ dh
 1 1
 weather_2019.txt
 Options_1985.txt
-soil_manage_1985
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1302,7 +1302,7 @@ dh
 1 1
 weather_2018.txt
 Options_1986.txt
-soil_manage_1986
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1317,7 +1317,7 @@ dh
 1 1
 weather_2019.txt
 Options_1987.txt
-soil_manage_1987
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1332,7 +1332,7 @@ dh
 1 1
 weather_2018.txt
 Options_1988.txt
-soil_manage_1988
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1347,7 +1347,7 @@ dh
 1 1
 weather_2019.txt
 Options_1989.txt
-soil_manage_1989
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1362,7 +1362,7 @@ dh
 1 1
 weather_2018.txt
 Options_1990.txt
-soil_manage_1990
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1377,7 +1377,7 @@ dh
 1 1
 weather_2019.txt
 Options_1991.txt
-soil_manage_1991
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1392,7 +1392,7 @@ dh
 1 1
 weather_2018.txt
 Options_1992.txt
-soil_manage_1992
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1407,7 +1407,7 @@ dh
 1 1
 weather_2019.txt
 Options_1993.txt
-soil_manage_1993
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1422,7 +1422,7 @@ dh
 1 1
 weather_2018.txt
 Options_1994.txt
-soil_manage_1994
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1437,7 +1437,7 @@ dh
 1 1
 weather_2019.txt
 Options_1995.txt
-soil_manage_1995
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1452,7 +1452,7 @@ dh
 1 1
 weather_2018.txt
 Options_1996.txt
-soil_manage_1996
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1467,7 +1467,7 @@ dh
 1 1
 weather_2019.txt
 Options_1997.txt
-soil_manage_1997
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1482,7 +1482,7 @@ dh
 1 1
 weather_2018.txt
 Options_1998.txt
-soil_manage_1998
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1497,7 +1497,7 @@ dh
 1 1
 weather_2019.txt
 Options_1999.txt
-soil_manage_1999
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1512,7 +1512,7 @@ dh
 1 1
 weather_2018.txt
 Options_2000.txt
-soil_manage_2000
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1527,7 +1527,7 @@ dh
 1 1
 weather_2019.txt
 Options_2001.txt
-soil_manage_2001
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1542,7 +1542,7 @@ dh
 1 1
 weather_2018.txt
 Options_2002.txt
-soil_manage_2002
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1557,7 +1557,7 @@ dh
 1 1
 weather_2019.txt
 Options_2003.txt
-soil_manage_2003
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1572,7 +1572,7 @@ dh
 1 1
 weather_2018.txt
 Options_2004.txt
-soil_manage_2004
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1587,7 +1587,7 @@ dh
 1 1
 weather_2019.txt
 Options_2005.txt
-soil_manage_2005
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1602,7 +1602,7 @@ dh
 1 1
 weather_2018.txt
 Options_2006.txt
-soil_manage_2006
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1617,7 +1617,7 @@ dh
 1 1
 weather_2019.txt
 Options_2007.txt
-soil_manage_2007
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1632,7 +1632,7 @@ dh
 1 1
 weather_2018.txt
 Options_2008.txt
-soil_manage_2008
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1647,7 +1647,7 @@ dh
 1 1
 weather_2019.txt
 Options_2009.txt
-soil_manage_2009
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1662,7 +1662,7 @@ dh
 1 1
 weather_2018.txt
 Options_2010.txt
-soil_manage_2010
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1677,7 +1677,7 @@ dh
 1 1
 weather_2019.txt
 Options_2011.txt
-soil_manage_2011
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1692,7 +1692,7 @@ dh
 1 1
 weather_2018.txt
 Options_2012.txt
-soil_manage_2012
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1707,7 +1707,7 @@ dh
 1 1
 weather_2019.txt
 Options_2013.txt
-soil_manage_2013
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1722,7 +1722,7 @@ dh
 1 1
 weather_2018.txt
 Options_2014.txt
-soil_manage_2014
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1737,7 +1737,7 @@ dh
 1 1
 weather_2019.txt
 Options_2015.txt
-soil_manage_2015
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1752,7 +1752,7 @@ dh
 1 1
 weather_2018.txt
 Options_2016.txt
-soil_manage_2016
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1767,7 +1767,7 @@ dh
 1 1
 weather_2019.txt
 Options_2017.txt
-soil_manage_2017
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1782,7 +1782,7 @@ dh
 1 1
 weather_2018.txt
 Options_2018.txt
-soil_manage_2018
+Soil_manage.txt
 pft_grow
 NO
 NO
@@ -1797,7 +1797,7 @@ dh
 1 1
 weather_2019.txt
 Options_2019.txt
-soil_manage_2019
+Soil_manage.txt
 pft_grow
 NO
 NO

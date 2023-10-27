@@ -64,7 +64,7 @@ for yr = 2011:2020
     
     curr_unique_days = unique_days(year_inds);
     curr_repmat = repmat(23, sum(year_inds), 1);
-    curr_daily_avg = daily_avg(year_inds)/100; %cm -> m
+    curr_daily_avg = -daily_avg(year_inds)/100; %cm -> m
     
     % File format: ddmmyyyy 23 averageValue
     filename = sprintf('water_level_%d', yr);

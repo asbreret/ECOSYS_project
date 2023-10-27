@@ -3,11 +3,23 @@ clc
 close all
 
 % Define the main data file
-filename = 'C:\Users\asbre\OneDrive\Desktop\Desktop_Aug_2023\ECOSYS\Input files\Site_files\site_data.xlsx';
-data = readtable(filename);
+input_dir = 'C:\Users\asbre\OneDrive\Desktop\ECOSYS_project\Raw_Observations\Site_file\';
+fname = 'site_data.xlsx';
+data = readtable([input_dir,fname]);
 code = data.LocationCode;
 
 for k = 1:length(code)
+
+    p=0;
+    if k == 1
+
+        p = 1;
+
+    elseif k==10
+
+        p = 1;
+
+    end
 
     % Define the directory path for the current code
     weatherDirectory = ['C:\Users\asbre\OneDrive\Desktop\ECOSYS_project\Inputs\Weather_Files\', code{k}, '\'];
@@ -41,9 +53,9 @@ for k = 1:length(code)
         '#SBATCH --partition=lr3'
         '#SBATCH --ntasks=1'
         '#SBATCH --mem=512mb'
-        '#SBATCH --time=8:30:00'
+        '#SBATCH --time=0:10:00'
         '#SBATCH --qos=lr_normal'
-        '/global/home/users/ashbre/ecosys_new/ecosys.x << eor > logdl'
+        '/global/home/users/ashbre/ecosys13022023/ecosys.x << eor > logdl'
         '1 1 1 1'
         ['site_',code{k},'.txt']
         ['topo_',code{k},'.txt']
@@ -55,13 +67,13 @@ for k = 1:length(code)
     end
 
     % Generate the content for each year and write it to the file
-    content = generateYearContent(1900, 0, N, earliest_year);
+    content = generateYearContent(1900, 0, N, earliest_year,p);
     for j = 1:numel(content)
         fprintf(fileID, '%s\n', content{j});
     end
 
     for year = initialYear:finalYear
-        content = generateYearContent(year, 1, N, earliest_year);
+        content = generateYearContent(year, 1, N, earliest_year,p);
 
         for j = 1:numel(content)
             fprintf(fileID, '%s\n', content{j});
@@ -78,10 +90,19 @@ end
 disp("Extended input file generated successfully.");
 
 % Function to generate the content for each year
-function content = generateYearContent(year, flag, N, earliest_year)
-    weatherFile = sprintf('weather_%d.txt', mod(year, N) + earliest_year);
+function content = generateYearContent(year, flag, N, earliest_year,p)
+    weatherFile = sprintf('weather_%d.txt', mod((year - earliest_year), N) + earliest_year);
     optionsFile = sprintf('Options_%d.txt', year);
+
+    if p == 1
+
     soilManageFile = sprintf('soil_manage_%d', year);
+
+    else
+
+        soilManageFile = sprintf('Soil_manage.txt');
+
+    end
 
     if flag == 0
         content = {
